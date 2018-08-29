@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SES Chapitre 1</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+  	<link rel="stylesheet" href="assets/css/quiz.css">
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+		<h2><a href='index.html'>SES en ligne</a></h2>
+		<nav>
+			<li><a id="accueil" href="index.html">Accueil</a></li>
+			<li><a href="programme.html">Cours</a></li>
+			<li class="hidden"><a href="#">Actualité</a></li>
+			<li class="hidden"><a href="#">A propos</a></li>
+			<li class="hidden"><a href="#">Contact</a></li>
+			<li><a href="#" class="search_button"><i class="fa fa-search" aria-hidden="true"></i></a>
+		</nav>
+</header>
+<breadcrumb>
+			<ul class="breadcrumb">
+	  			<li><a href="index.html">Accueil</a></li>
+	  			<li><a href="programme.html">Cours</a></li>
+	  			<li>Chap. 1 : Quelles sont les sources de la croissance économique ?</li>
+			</ul>
+</breadcrumb>
+<section id="selection">
+  			<h1>Quelles sont les sources de la croissance économique ?</h1>
+  			<h2>Terminale ES</h2>
+  				<div id="teachingChoice">
+	  				<a href="SESchap1.html" class="choice">Le Cours</a>
+	  				<a href="#" class="choice active">Le Quiz</a>
+  				</div>
+  		</section>
+<main>
+  <article>
+	<section id="document_content">
+			<div class="part_title">
+			<form name="quizForm" onsubmit="return submitAnswers()">
+				<h3>1. Quel élément permet d'augmenter le facteur capital dans une économie ?</h3>
+				<input type="radio" name="q1" value="a" id="q1a"><div class="rep" id=Q1a> la formation</div><br>
+				<input type="radio" name="q1" value="b" id="q1b"><div class="rep" id=Q1b> l'investissement</div><br>
+				<input type="radio" name="q1" value="c" id="q1c"><div class="rep" id=Q1c> l'innovation</div><br>
+				<input type="radio" name="q1" value="d" id="q1d"><div class="rep" id=Q1d> les droits de propriété</div><br>
+				
+
+				<h3>2. Quel élément permet d'augmenter le facteur travail dans une économie ?</h3>
+				<input type="radio" name="q2" value="a" id="q2a"><div class="rep" id=Q2a> l'allongement de la scolarité obligatoire</div><br>
+				<input type="radio" name="q2" value="b" id="q2b"><div class="rep" id=Q2b> l'investissement</div><br>
+				<input type="radio" name="q2" value="c" id="q2c"><div class="rep" id=Q2c> la baisse du taux de chômage</div><br>
+				<input type="radio" name="q2" value="d" id="q2d"><div class="rep" id=Q2d> la formation</div><br>
+				
+
+				<h3>3. Lorsque le taux de croissance du PIB diminue, cela signifie que le PIB baisse.</h3>
+				<input type="radio" name="q3" value="a" id="q3a"><div class="rep" id=Q3a> Vrai</div><br>
+				<input type="radio" name="q3" value="b" id="q3b"><div class="rep" id=Q3b> Faux</div><br>
+				
+
+				<h3>4. La PGF génère des gains de productivité qui génèrent de la croissance car l'entreprise peut... : </h3>
+				<input type="radio" name="q4" value="a" id="q4a"><div class="rep" id=Q4a> exporter une partie de sa production</div><br>
+				<input type="radio" name="q4" value="b" id="q4b"><div class="rep" id=Q4b> augmenter les salaires</div><br>
+				<input type="radio" name="q4" value="a" id="q4a"><div class="rep" id=Q4a> augmenter son prix de vente</div><br>
+				<input type="radio" name="q4" value="a" id="q4a"><div class="rep" id=Q4a> exporter une partie de sa production</div><br>
+				
+
+				<h3>5. La PGF met en évidence le rôle joué par...</h3>
+				<input type="radio" name="q5" value="a" id="q5a"><div class="rep" id=Q5a> le facteur capital</div><br>
+				<input type="radio" name="q5" value="b" id="q5b"><div class="rep" id=Q5b> le progrès technique</div><br>
+				<input type="radio" name="q5" value="c" id="q5c"><div class="rep" id=Q5c> l'investissement</div><br>
+				<input type="radio" name="q5" value="d" id="q5d"><div class="rep" id=Q5d> le facteur travail</div><br>
+
+				<h3>6. La croissance a réellement commencé à partir de quelle époque ?</h3>
+				<input type="radio" name="q6" value="a" id="q6a"><div class="rep" id=Q6a> 16ème siècle</div><br>
+				<input type="radio" name="q6" value="b" id="q6b"><div class="rep" id=Q6b> 17ème siècle</div><br>
+				<input type="radio" name="q6" value="c" id="q6c"><div class="rep" id=Q6c> 18ème siècle</div><br>
+				<input type="radio" name="q6" value="d" id="q6d"><div class="rep" id=Q6d> 19ème siècle</div><br>
+
+				<h3>7. Le PIB de la France est de 0.3% au 3ème trimestre de 2018</h3>
+				<input type="radio" name="q7" value="a" id="q7a"><div class="rep" id=Q7a> Vrai</div><br>
+				<input type="radio" name="q7" value="b" id="q7b"><div class="rep" id=Q7b> Faux</div><br>
+
+				<h3>8. Le progrès technique permet une hausse de la PGF grâce à...</h3>
+				<input type="radio" name="q8" value="a" id="q8a"><div class="rep" id=Q8a> une meilleure organisation de la production</div><br>
+				<input type="radio" name="q8" value="b" id="q8b"><div class="rep" id=Q8b> une plus grande flexibilité</div><br>
+				<input type="radio" name="q8" value="c" id="q8c"><div class="rep" id=Q8c> une réduction du nombre de salairié</div><br>
+				<input type="radio" name="q8" value="d" id="q8d"><div class="rep" id=Q8d> un plus grand nombre de machines</div><br>
+
+				<h3>9. Le PIB permet : </h3>
+				<input type="radio" name="q9" value="a" id="q9a"><div class="rep" id=Q9a> de mesurer l'impact écologiques des hommes sur la planète</div><br>
+				<input type="radio" name="q9" value="b" id="q9b"><div class="rep" id=Q9b> d'approcher le niveau de vie d'une population</div><br>
+				<input type="radio" name="q9" value="c" id="q9c"><div class="rep" id=Q9c> de mesurer le bien-être d'une population</div><br>
+				<input type="radio" name="q9" value="d" id="q9d"><div class="rep" id=Q9d> de rendre compte du niveau de l'économie souterraine</div><br>
+
+				<h3>10. Les feux de forêts peuvent contribuer à la hausse du PIB</h3>
+				<input type="radio" name="q10" value="a" id="q10a"><div class="rep" id=Q10a> Vrai</div><br>
+				<input type="radio" name="q10" value="b" id="q10b"><div class="rep" id=Q10b> Faux</div><br>
+				
+
+				<input type="submit" value="Valider">
+				<div id="answer5"></div>
+				<br>
+				</form>
+				<div id="results"></div>
+				<div id="error"></div>
+			  			
+		</section>
+	</article>
+</main>
+<script rel="js/script" src="assets/js/quiz.js"></script>
+<script type="text/javascript" src="assets/js/programme.js"></script>
+</body>
+</html>

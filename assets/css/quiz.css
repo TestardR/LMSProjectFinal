@@ -1,0 +1,271 @@
+/*General styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;   
+}
+
+html {
+  font: normal 16px sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    background-color: #e4eaf1
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #232a3a ;
+}
+
+a:hover {
+  opacity: 1;
+  color: #52c9aa;
+}
+
+a:active {
+  color: #52c9aa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+    margin: auto;
+    justify-content: center;
+}
+
+article {
+    border-radius: 10px;
+    margin-right: 50px;
+    flex-grow: 5;
+    width: 1200px;
+    margin-bottom: 50px;
+}
+
+/* Header Styles*/
+
+header {
+  flex-basis: 100px;
+  font-size: 18px;
+  list-style: none;
+  font-weight: bold;
+  padding: 20px 100px 20px;
+  animation: 1s fadine 0.5s forwards;
+  opacity: 0;
+  box-shadow: 0 2px 2px -2px gray;
+  background-color: white;
+/*  position: fixed;*/
+  width: 100%;
+}
+
+@keyframes fadine {
+  100% {
+    opacity: 1;
+  }
+}
+
+header h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+}
+
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li {
+  margin: 20px;
+}
+
+header nav li #accueil {
+  color: #52c9aa;
+  opacity: 1;
+  border-bottom: 2px solid #52c9aa;
+
+}
+
+@media (max-width: 480px) {
+  header {
+    padding:20px 0 130px;
+    flex-direction: column;
+  }
+
+  header h2 {
+    margin-bottom : 15px;
+  }
+
+  header li.hidden {
+    display: none;
+  }
+}
+
+/*breadcrumb*/
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #52c9aa;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font: 17px "Roboto Slab", sans-serif;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: white;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #384158;
+}
+
+ul.breadcrumb li {
+    color: #384158;
+}
+
+@media (max-width: 480px) {
+  breadcrumb {
+    display: none;
+  }
+}
+
+
+/*Section quizz or course*/
+
+#selection {
+  max-width: 900px;
+  margin: auto;
+}
+
+#selection h1 {
+    font: bold 25px "Roboto Slab", sans-serif;
+    text-align: center;
+    color: #384158;
+    padding-top: 50px;
+}
+
+#selection h2 {
+    font: 20px "Roboto Slab", sans-serif;
+    color: #384158;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#teachingChoice {
+  font-size: 23px;
+  margin: 30px 20px 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  flex-basis: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+#teachingChoice a {
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0 2px 2px -2px gray;
+}
+
+#teachingChoice a:hover {
+  color: white;
+  background-color: #8e8e8e;
+}
+
+#teachingChoice a.active {
+  color: white;
+  background-color: #52c9aa;
+}
+
+
+/*Content section */
+
+#document_content {
+    border-radius: 6px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.1);
+    background: #fff;
+    position: relative;
+    padding: 40px 20px 40px 60px;
+    overflow: hidden;
+    margin-bottom: 35px;
+    text-align: left;
+    position: relative;
+}
+
+h3 {
+    font: 700 20px Quicksand,sans-serif;
+    margin: 30px 0 20px;
+    color: #46447f;
+    padding: 0 50px 0 40px;
+}
+
+#Q1a, #Q1b, #Q1c, #Q1d, #Q2a, #Q2b, #Q2c, #Q2d, #Q3a, #Q3b, #Q3c, #Q3d, #Q4a, #Q4b, #Q5a, #Q5b, #Q5c, #Q5d, #Q6a, #Q6b, #Q6c, #Q6d, #Q7a, #Q7b, #Q8a, #Q8b, #Q8c, #Q8d, #Q9a, #Q9b, #Q9c, #Q9d, #Q10a, #Q10b {
+    display:inline-block;
+}
+
+input[type=radio] {
+    margin: 10px 10px 10px 100px;
+}
+
+input[type=submit] {
+    padding: 20px 46px;
+    margin-top: 50px;
+    margin-left: 40%;
+    margin-right: 30%;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #52c9aa;
+    opacity: 1;
+    color: white;
+    font-size: 18px;
+}
+
+.rep {
+    color: #808595;
+    font: 500 18px Quicksand,sans-serif;
+}
+
+#results, #error {
+
+}
+
+#error {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+    #document_content {
+      padding: 40px 880px 40px 0px;
+    }
+    h3 {
+      padding: 0 0 0 5px ;
+    }
+    input[type=radio] {
+      margin: 10px 5px 10px 10px;
+    }
+    input[type=submit] {
+    margin-left: 30%;
+    margin-right: 30%;
+    }
+}

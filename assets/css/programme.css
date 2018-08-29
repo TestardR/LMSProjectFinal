@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;   
+}
+
+html {
+  font: normal 16px sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #232a3a ;
+}
+
+a:hover {
+  opacity: 1;
+  color: #52c9aa;
+}
+
+a:active {
+  color: #52c9aa;
+}
+
+/* Header Styles*/
+
+header {
+  flex-basis: 100px;
+  font-size: 18px;
+  list-style: none;
+  font-weight: bold;
+  padding: 20px 100px 20px;
+  animation: 1s fadine 0.5s forwards;
+  opacity: 0;
+  box-shadow: 0 2px 2px -2px gray;
+  background-color: white;
+/*  position: fixed;*/
+  width: 100%;
+}
+
+@keyframes fadine {
+  100% {
+    opacity: 1;
+  }
+}
+
+header h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+}
+
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li {
+  margin: 20px;
+}
+
+header nav li #accueil {
+  color: #52c9aa;
+  opacity: 1;
+  border-bottom: 2px solid #52c9aa;
+
+}
+
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+
+  header h2 {
+    margin-bottom : 15px;
+  }
+
+  header li.hidden {
+    display: none;
+  }
+}
+
+/*breadcrumb*/
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #52c9aa;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font: 17px "Roboto Slab", sans-serif;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: white;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #384158;
+}
+
+ul.breadcrumb li {
+    color: #384158;
+}
+
+/*Main styles */
+
+main {
+  background-color: #e4eaf1;
+}
+
+/*Section programmes*/
+
+#programmes {
+  max-width: 900px;
+  margin: auto;
+}
+
+#programmes h1 {
+    font: bold 25px "Roboto Slab", sans-serif;
+    text-align: center;
+    color: #384158;
+    padding-top: 50px;
+}
+
+#programmes h2 {
+    font: 20px "Roboto Slab", sans-serif;
+    color: #384158;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#teachingChoice {
+  margin: 30px 20px 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  flex-basis: auto;
+  text-align: center;
+}
+
+#teachingChoice a {
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0 2px 2px -2px gray;
+}
+
+#teachingChoice a:hover {
+  color: white;
+  background-color: #8e8e8e;
+}
+
+#teachingChoice a.active {
+  color: white;
+  background-color: #52c9aa;
+}
+
+/*Section programmes */
+
+#courses_list {
+  display: flex;  
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 10px 0 50px 0;
+}
+
+div.course {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 30px;
+    max-width: 310px;
+    max-height: 500px;
+    background: white;
+    box-shadow: 0 0 2px;
+    margin: 20px 0 20px;
+}
+
+div.course img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+div.course_body {
+/*    max-height: 500px;*/
+    padding: 10px 20px 10px 20px;
+}
+
+.course_title {
+    font: bold 18px "Roboto Slab", sans-serif;
+}
+
+.course_teacher {
+    font: 15px "Roboto Slab", sans-serif;
+    color: #a59393;
+    padding-top: 3px;
+}
+
+.course_text p {
+    font: 14px "Quicksand", sans-serif;
+    text-align: left;
+    padding-top: 10px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+@media (max-width: 480px) {
+  div.course {
+    max-height: 100%;
+    width: 300px;
+    margin: 10px;
+  }
+  .course_image {
+    display: none;
+  } 
+  .course_title {
+    font-size: 18px;
+  }
+  .course_teacher {
+    font-size: 13px;
+  }
+  div.course_body {
+    padding: 5px 5px 5px 5px;
+  }
+  .course_text {
+    display: none;
+  }
+}
